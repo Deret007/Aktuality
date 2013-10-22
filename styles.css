@@ -1,0 +1,211 @@
+/*
+By David Tereba & Dario Kolar
+www.davidtereba.cz & www.dariokolar.cz
+*/
+#novinky {
+    height: 200px; 
+    background:white;
+    position: relative; 
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    padding: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-y-width:0px;
+}
+.nov {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: blue;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.datum {
+    float: left;
+    margin-right: 10px;
+    color: gray;
+    font-weight: normal;
+}
+.plus {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    background: whitesmoke;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding-bottom: 2px;
+    border: 1px solid;
+    color: black;
+}
+.minus {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    background: whitesmoke;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding-bottom: 2px;
+    border: 1px solid;
+    color: black;
+}
+.detail {
+    display: none;
+    position: relative;
+    float: left;
+    margin-bottom: 5px; 
+    left: 30px;
+    color: black;
+    width: 80%;
+}
+form {margin: 0px 0px 0px 0px;}
+.textbox {
+    font-size: 15px;
+    height: 20px;
+    width: 322px;
+    padding: 5px;
+    border-radius: 1px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    background: #ffffff;
+    padding: 10px;
+}
+
+
+
+.submit {          
+    color:white;
+    height: 40px;
+    width: 196px;
+    padding: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    -webkit-transition-property: all; -webkit-transition-duration: 500ms;
+    -moz-transition-property: all;    -moz-transition-duration: 500ms; 
+    transition: all 500ms ease-in-out; 
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+
+    background-color:#007dc1;
+
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+
+    border:1px solid #124d77;
+
+    display:inline-block;
+    color:#ffffff;
+    font-family:arial;
+    font-size: 15px;
+    font-weight:normal;
+    padding:6px 24px;
+    text-decoration:none;
+
+    text-shadow:0px 1px 0px #154682;
+}
+
+.submit:hover {          
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+    background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+
+    background-color:#0061a7;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#texteditor {
+    width:530px;
+    margin-left: 0px;
+}
+
+.plusko {
+    border-radius: 20px;
+    float:left;
+    height: 14px;
+    width:14px;
+    background:black;
+    color:white; 
+    padding: 1px 2px 2px 1px; 
+    text-align:center; 
+    margin-right: 5px;
+}
+.clankyseznam .prispevek {
+    clear: left;
+    width: 100%; 
+    height: 30px; 
+    border-bottom: 1px dotted black; 
+    margin-top: 10px;
+}
+.clankyseznam {
+    margin: 10px;
+    clear:left right;
+}
+.clankyseznam .nadpis {
+    float:left;
+}
+.clankyseznam .edit {
+    float:right;
+    margin-left: 20px;
+}
+.clankyseznam .smazat {
+    float:right;
+}
+
+#icon-ok { 
+    background-image: url(icon-ok.gif);
+    background-position:  10px 10px;
+    background-repeat: no-repeat;}
+#icon-lock {
+    background-image: url(icon-lock.gif);
+    background-position:  10px 10px;
+    background-repeat: no-repeat;}
+#icon-plus {
+    background-image: url(icon-plus.gif);
+    background-position:  10px 10px;
+    background-repeat: no-repeat;}
+#icon-edit {
+    background-image: url(icon-edit.gif);  
+    height:26px;
+    width:80px;   
+    padding-left: 20px;
+    background-position:  5px 5px;
+    background-repeat: no-repeat;
+}
+#icon-trash {
+    background-image: url(icon-trash.gif); 
+    height:26px; width:70px;        
+    padding-left: 20px;
+    background-position:  5px 5px;
+    background-repeat: no-repeat;
+}    
+/*konec editu*/
+
+.prispevek form {
+    float: right;
+}            
+.prispevek form input[type=button] {
+
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: white;
+}
